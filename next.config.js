@@ -1,4 +1,3 @@
-
 const withPWA = require('next-pwa');
 const runtimeCaching = require('next-pwa/cache.js');
 const isProduction = process.env.NODE_ENV === 'production';
@@ -20,33 +19,31 @@ const config = {
   },
   
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production"
   },
   typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
     ignoreBuildErrors: true,
   },
   webpack: (config) => {
     config.resolve = {
       ...config.resolve,
+      alias: {
+        // Adicione ou modifique seus aliases aqui
+        '@': require('path').resolve(__dirname, 'src'),
+      },
       fallback: {
         "fs": false,
         "path": false,
         "os": false,
       }
-    }
-    return config
+    };
+    return config;
   },
 };
- 
+
 const nextConfig = withPWA({
   dest: 'public',
   disable: !isProduction,

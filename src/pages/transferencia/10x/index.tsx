@@ -2,12 +2,13 @@
 
 import React from 'react';
 import ContentContainer from '@/components/atoms/ContentContainer';
-import Transferencia10xTemplate from '@/components/templates/transferencia10xTemplate';
 
 const Transferencia10xPage = () => {
   return (
     <ContentContainer>
-      <Transferencia10xTemplate />
+      {/* Conteúdo da página Transferência 10x aqui */}
+      <h1>Página de Transferência 10x</h1>
+      {/* Você pode adicionar mais componentes ou conteúdo aqui conforme necessário */}
     </ContentContainer>
   );
 }
