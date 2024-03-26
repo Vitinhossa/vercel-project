@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-spinkit/.DS_Store b/node_modules/react-spinkit/.DS_Store
+new file mode 100644
+index 0000000..08a5777
+Binary files /dev/null and b/node_modules/react-spinkit/.DS_Store differ
+diff --git a/node_modules/react-spinkit/dist/index.js b/node_modules/react-spinkit/dist/index.js
+index 1a0cccf..1f7c138 100644
+--- a/node_modules/react-spinkit/dist/index.js
++++ b/node_modules/react-spinkit/dist/index.js
+@@ -37,7 +37,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function"
+ 
+ if (!process.env.REACT_SPINKIT_NO_STYLES) {
+   /* eslint-disable global-require */
+-  require('loaders.css');
++  /*require('loaders.css');
+   require('../css/base.css');
+   require('../css/loaders-css.css');
+   require('../css/fade-in.css');
+@@ -51,7 +51,7 @@ if (!process.env.REACT_SPINKIT_NO_STYLES) {
+   require('../css/three-bounce.css');
+   require('../css/wandering-cubes.css');
+   require('../css/wave.css');
+-  require('../css/wordpress.css');
++  require('../css/wordpress.css');*/
+   /* eslint-enable global-require */
+ }
+ 
